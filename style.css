@@ -40,9 +40,6 @@ main {
   text-shadow: 2px black;
   margin-bottom: 60px;
 }
-.imagem {
-  width: 40%;
-}
 
 .btn {
   cursor: pointer;
@@ -98,4 +95,45 @@ main {
   margin-bottom: 7px;
   width: 300px;
   height: 30px;
+}
+@media (max-width: 1200px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 700px) {
+  main {
+    margin: 10px;
+  }
+  .foguete {
+    width: 100%;
+    margin-top: 100px;
+  }
+  .principal {
+    width: 100%;
+  }
+  .time-text {
+    font-size: 15px;
+  }
+  .time-number {
+    font-size: 45px;
+  }
+  .modalBox {
+    width: 180px;
+    height: 180px;
+  }
+  .inputColor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 20px;
+  }
+  .fechar {
+    margin-left: 180px;
+  }
+  .enviar {
+    margin-top: 20px;
+  }
 }
