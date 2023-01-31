@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Countdown</title>
+  </head>
+  <body class="geral">
+    <main>
+      <section class="principal">
+        <p class="texto1">READY TO LAUNCH IN...</p>
+        <div class="timer">
+          <div class="time-item">
+            <p class="time-text">days</p>
+            <p class="time-number" id="days">00</p>
+          </div>
+          <div class="time-item">
+            <p class="time-text">hours</p>
+            <p class="time-number" id="hours">00</p>
+          </div>
+          <div class="time-item">
+            <p class="time-text">minutes</p>
+            <p class="time-number" id="minutes">00</p>
+          </div>
+          <div class="time-item">
+            <p class="time-text">seconds</p>
+            <p class="time-number" id="seconds">00</p>
+          </div>
+        </div>
+        <p class="texto2">Inscreva-se para saber mais sobre o lançamento</p>
+        <div class="centraliza">
+          <button class="btn" onclick="abrindoModal()">Subscribe</button>
+        </div>
+      </section>
+
+      <section class="foguete">
+        <img src="./assets/fotos/rocket.svg" alt="" />
+      </section>
+    </main>
+
+    <div id="modal" style="display: none">
+      <div
+        class="containerModal"
+        style="justify-content: center; align-items: center"
+      >
+        <div class="modalBox" style="max-width: 80vw">
+          <button onclick="fechaModal()" class="fechar">&#9932;</button>
+          <br />
+          <label for="name">Nome:</label>
+          <br />
+          <input
+            class="inputColor"
+            required
+            type="text"
+            name="name"
+            id="nome"
+          />
+          <br />
+          <label for="name">Email:</label>
+          <br />
+          <input
+            class="inputColor"
+            required
+            type="text"
+            name="email"
+            id="input"
+          />
+          <button
+            id="botao"
+            class="enviar"
+            type="submit"
+            onclick="fechaModal()"
+          >
+            Enviar
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/script.js"></script>
+</html>

@@ -1,0 +1,101 @@
+.geral {
+  background-color: rgba(0, 208, 219);
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.texto1 {
+  letter-spacing: 0.2rem;
+  font-family: Poppins;
+  color: #6c63ff;
+  font-size: 45px;
+  margin-bottom: 45px;
+}
+.fechar {
+  margin-left: 270px;
+}
+.timer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.time-text {
+  font-size: 30px;
+  color: rgba(44, 44, 44, 0.842);
+}
+.time-number {
+  font-size: 70px;
+  margin-top: 12px;
+  margin-bottom: 45px;
+}
+.texto2 {
+  font-family: Poppins;
+  color: white;
+  font-size: 15px;
+  text-shadow: 2px black;
+  margin-bottom: 60px;
+}
+.imagem {
+  width: 40%;
+}
+
+.btn {
+  cursor: pointer;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #6c63ff;
+  border: none;
+  transition: 0, 25;
+  letter-spacing: 0.1rem;
+}
+.btn:hover {
+  transform: scale(1.02);
+
+  box-shadow: 0, 0, 0, rgba(0, 0, 0, 0.75);
+}
+.containerModal {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.modalBox {
+  z-index: 1000;
+  padding: 3rem;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: var(
+    --mdc-dialog-container-elevation,
+    0px 11px 15px -7px rgba(0, 0, 0, 0.2),
+    0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+    0px 9px 46px 8px rgba(0, 0, 0, 0.12)
+  );
+}
+.enviar {
+  background-color: #6c63ff;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  margin-top: 10px;
+  text-align: center;
+}
+.inputColor {
+  background-color: gray;
+  border: #6c63ff;
+  color: white;
+  border-radius: 2px;
+  border: none;
+  margin-top: 5px;
+  margin-bottom: 7px;
+  width: 300px;
+  height: 30px;
+}
